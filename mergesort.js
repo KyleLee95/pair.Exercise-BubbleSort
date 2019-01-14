@@ -9,7 +9,7 @@ function split(wholeArray) {
   return [left, right];
 }
 
-console.log(split([1, 2, 3, 4, 5, 6, 7]));
+// console.log(split([2,1]));
 
 function merge(splitArray) {
   if (splitArray.length === 1) {
@@ -31,12 +31,17 @@ function merge(splitArray) {
   return retArr;
 }
 
-console.log(split([1]));
+// console.log(split([1]));
 
 function mergeSort(arr) {
+  if (!arr.length) {
+    return [];
+  }
   if (arr.length === 1) {
     return merge(arr);
+  } else {
+    return mergeSort(split(arr))
   }
 }
 
-console.log(merge([[1]]));
+console.log(merge([2, 1, 0 , -1]));
