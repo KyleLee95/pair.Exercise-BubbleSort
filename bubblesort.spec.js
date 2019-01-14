@@ -51,18 +51,18 @@
 //   });
 // });
 
-describe("bubble sort", function() {
-  let test_sort_arr = [1, 2, 3, 4, 5, 6, 7, 0];
-  let sorted_arr = [0, 1, 2, 3, 4, 5, 6, 7];
+// describe("bubble sort", function() {
+//   let test_sort_arr = [1, 2, 3, 4, 5, 6, 7, 0];
+//   let sorted_arr = [0, 1, 2, 3, 4, 5, 6, 7];
 
-  it("sorts the array", function() {
-    const sorted = bubbleSort(test_sort_arr);
-    expect(sorted).toEqual(sorted_arr);
-  });
+//   it("sorts the array", function() {
+//     const sorted = bubbleSort(test_sort_arr);
+//     expect(sorted).toEqual(sorted_arr);
+//   });
 
-  it("uses swap the right amount of times", function() {
-    spyOn(window, "swap");
-    bubbleSort(test_sort_arr);
-    expect(swap.calls.count()).toEqual(7);
-  });
-});
+//   it("uses swap the right amount of times", function() {
+//     spyOn(window, "swap");
+//     bubbleSort(test_sort_arr);
+//     expect(swap.calls.count()).toEqual(7);
+//   });
+// });
