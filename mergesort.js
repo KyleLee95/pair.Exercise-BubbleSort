@@ -44,4 +44,4 @@ function mergeSort(arr) {
   }
 }
 
-console.log(merge([2, 1, 0 , -1]));
+console.log(merge([2, 1, 0, -1]));
