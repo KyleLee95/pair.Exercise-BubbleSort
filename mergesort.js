@@ -15,6 +15,10 @@ function merge(splitArray) {
   if (splitArray.length === 1) {
     return splitArray[0]; //splitArray[0]
   }
+  if (splitArray[0].length !== 1) {
+    split(splitArray[0]);
+    split(splitArray[1]);
+  }
 
   //Merging when splitArray.length > 1
   let cur = splitArray[0][0];
@@ -40,8 +44,8 @@ function mergeSort(arr) {
   if (arr.length === 1) {
     return merge(arr);
   } else {
-    return mergeSort(split(arr))
+    return mergeSort(split(arr));
   }
 }
 
-console.log(merge([2, 1, 0, -1]));
+console.log(merge([[2, 4], [1, 5]]));
